@@ -1,0 +1,16 @@
+.row{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.col-md-4{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    
+    margin: auto;
+}
+
