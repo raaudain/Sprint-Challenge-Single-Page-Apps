@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import {witFormik, Form, Field} from "formik";
 
 export default function SearchForm() {
   
-  const [find, setFind] = useState({})
+  const [query, setQuery] = useState({})
 
-  function handleSearch(event){
-    const newSearch = Object.freeze({text: event.target.value});
-    setFind(newSearch);
-  }
 
-  function search(){
-    const newSearch = Object.freeze({text: find.text})
-    if(on)
-  }
 
   return (
     <section className="search-form">
-     
+      <Form>
+        <Field type="text" className="filed" name="query" placeholder="Search by Name" />
+
+      </Form>
+
+      {/* {query.filter(find => (
+
+      ))} */}
+
     </section>
   );
 }

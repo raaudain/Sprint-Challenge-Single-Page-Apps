@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard"
+//import Character from "./Character"
 import {Container, Row} from "reactstrap"
 
 export default function CharacterList() {
